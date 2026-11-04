@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="650" viewBox="0 0 540 650" fill="none">
+  <defs>
+    <linearGradient id="arch" x1="51" y1="40" x2="474" y2="639" gradientUnits="userSpaceOnUse"><stop stop-color="#d2c4df"/><stop offset=".49" stop-color="#bca9cd"/><stop offset="1" stop-color="#a48cb8"/></linearGradient>
+    <radialGradient id="light" cx="0" cy="0" r="1" gradientTransform="translate(170 200) rotate(57) scale(440 350)" gradientUnits="userSpaceOnUse"><stop stop-color="#f1eaf5" stop-opacity=".6"/><stop offset="1" stop-color="#c1afd1" stop-opacity="0"/></radialGradient>
+    <linearGradient id="petal" x1="174" y1="205" x2="356" y2="395" gradientUnits="userSpaceOnUse"><stop stop-color="#fff7d5"/><stop offset=".54" stop-color="#e9dba8"/><stop offset="1" stop-color="#c5b38a"/></linearGradient>
+    <linearGradient id="sidePetal" x1="335" y1="290" x2="395" y2="416" gradientUnits="userSpaceOnUse"><stop stop-color="#f5edcd"/><stop offset="1" stop-color="#d0bc8d"/></linearGradient>
+    <linearGradient id="stem" x1="260" y1="384" x2="298" y2="590" gradientUnits="userSpaceOnUse"><stop stop-color="#8f739f"/><stop offset="1" stop-color="#6e527c"/></linearGradient>
+    <linearGradient id="plinth" x1="150" y1="570" x2="375" y2="630" gradientUnits="userSpaceOnUse"><stop stop-color="#ac93bd"/><stop offset="1" stop-color="#8e709f"/></linearGradient>
+    <clipPath id="portal"><path d="M12 645V268a258 258 0 0 1 516 0v377H12Z"/></clipPath>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="petalShadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+  <g clip-path="url(#portal)">
+    <path fill="url(#arch)" d="M0 0h540v650H0z"/><path fill="url(#light)" d="M0 0h540v650H0z"/>
+    <path d="M41 650V270a229 229 0 0 1 458 0v380" stroke="#f5eef7" stroke-opacity=".4"/>
+    <path d="M56 650V270a214 214 0 0 1 428 0v380" stroke="#f5eef7" stroke-opacity=".22"/>
+    <circle cx="269" cy="321" r="176" stroke="#eee4bf" stroke-opacity=".75" stroke-width=".8"/>
+    <ellipse cx="269" cy="321" rx="215" ry="88" transform="rotate(-34 269 321)" stroke="#f6eccb" stroke-opacity=".7" stroke-width=".8"/>
+    <ellipse cx="269" cy="321" rx="112" ry="214" transform="rotate(-34 269 321)" stroke="#f6eccb" stroke-opacity=".4" stroke-width=".7"/>
+    <path d="M88 482h364M88 486h364" stroke="#f0e6f5" stroke-opacity=".2" stroke-width=".6"/>
+    <ellipse cx="285" cy="598" rx="130" ry="19" fill="#70547c" fill-opacity=".24" filter="url(#shadow)"/>
+    <path d="M164 575h212v75H164z" fill="url(#plinth)"/>
+    <ellipse cx="270" cy="575" rx="106" ry="20" fill="#cfbddd"/>
+    <ellipse cx="270" cy="575" rx="93" ry="14" stroke="#ece0f2" stroke-opacity=".4" stroke-width=".7"/>
+    <path d="M270 574c-16-64 37-128 7-199" stroke="url(#stem)" stroke-width="3"/>
+    <path d="M280 502c-42-10-65-35-72-67 42 8 68 30 72 67Z" fill="#9780a6"/>
+    <path d="M280 502c-22-21-44-44-66-61" stroke="#c7b4d5" stroke-width=".8"/>
+    <path d="M283 464c38-3 63-26 77-58-39 1-68 23-77 58Z" fill="#ad97bd"/>
+    <path d="M283 464c20-18 44-35 70-53" stroke="#d8c7e1" stroke-width=".8"/>
+    <path d="M285 399c-53-15-99-59-92-121 41 35 88 49 105 97" fill="#70537a" fill-opacity=".16" filter="url(#petalShadow)" transform="translate(5 10)"/>
+    <path d="M282 395c-62-13-108-57-110-121 44 23 91 29 110 121Z" fill="url(#petal)"/>
+    <path d="M282 395c64-1 108-35 120-97-56 17-105 39-120 97Z" fill="url(#sidePetal)"/>
+    <path d="M282 395c-5-67-58-93-56-172 46 15 89 46 80 118" fill="url(#petal)"/>
+    <path d="M282 395c-18-60-13-121 36-186 32 57 30 119-36 186Z" fill="url(#petal)"/>
+    <path d="M282 395c-8-54 29-93 72-132 8 56-10 104-72 132Z" fill="url(#sidePetal)"/>
+    <path d="M282 395c-20-52-54-93-56-172m56 172c6-69 28-124 36-186m-36 186c37-28 54-67 72-132m-72 132c-35-41-69-63-110-121" stroke="#fff8dc" stroke-opacity=".43" stroke-width=".8"/>
+    <circle cx="423" cy="205" r="4" fill="#f2e6ba"/>
+    <path d="M110 360v20m-10-10h20m-17-7 14 14m0-14-14 14" stroke="#f6eac3" stroke-width="1"/>
+    <text x="81" y="548" fill="#f9f3df" font-family="Georgia,serif" font-size="134" font-style="italic" opacity=".86">Z</text>
+  </g>
+  <path d="M12 645V268a258 258 0 0 1 516 0v377H12Z" stroke="#b8a3c7" stroke-opacity=".5"/>
+</svg>
