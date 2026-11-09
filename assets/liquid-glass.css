@@ -13,7 +13,6 @@ body::before { z-index: -2; opacity: var(--flower-opacity,.65); }
 .header-note { border-color: #bca7c84d; }
 .hero { padding-top: 54px; }
 .hero-copy { position: relative; z-index: 2; }
-.degree-badge { border-radius: 30px; background: #ece4f0aa; border-color: #dacbe3b3; box-shadow: inset 0 1px 1px #fff9; }
 .hero-belief { border-left-width: 2px; border-radius: 0 20px 20px 0; background: linear-gradient(90deg,#eee2bd6b,transparent); }
 .arrow-circle { background: #ffffff40; backdrop-filter: blur(10px); border-color: #bfa9cf80; box-shadow: inset 0 1px 1px #fff; }
 /* The portrait treatment follows the reference: original photo, glass rim,
@@ -24,8 +23,9 @@ body::before { z-index: -2; opacity: var(--flower-opacity,.65); }
 .portrait-caption { position: absolute; left: 29px; right: 29px; bottom: 29px; display: block; margin: 0; padding: 18px; background: linear-gradient(130deg,#53445999,#29272a80); border: 1px solid #ffffff52; backdrop-filter: blur(20px); border-radius: 20px; color: #fff; box-shadow: inset 0 1px 1px #ffffff3d,0 8px 22px #2018271a; }
 .portrait-caption p { margin: 0; font-size: 15px; line-height: 1.8; }
 .portrait-note { position: absolute; left: -16px; bottom: 90px; z-index: 2; width: 156px; padding: 19px 21px; transform: rotate(-5deg); --glass-radius: 24px; background: linear-gradient(145deg,#fff8dfae,#eee0b770); box-shadow: inset 0 1px 1px #fff,0 16px 35px #5f496e12; }
-.portrait-note p { font-size: 20px; line-height: 1.6; margin: 7px 0 0; }
-.note-spark { font-size: 27px; color: #a68d57; line-height: 1; }
+.portrait-note p { font-family: var(--ui-font); font-size: 20px; font-weight: 400; letter-spacing: .5px; line-height: 1.7; margin: 0; }
+.portrait-note strong { font-weight: 600; }
+.note-rule { display: block; width: 25px; height: 2px; background: #a68d57; opacity: .75; margin: 0 0 10px; }
 .portrait-halo { position: absolute; inset: 13% -7% 12% -5%; border-radius: 50%; filter: blur(35px); background: radial-gradient(ellipse,#d5c4e166,#ede0c12e 58%,transparent 73%); }
 .hero-bottom { margin-top: 35px; }
 .section { padding-top: 75px; }
@@ -61,10 +61,9 @@ body::before { z-index: -2; opacity: var(--flower-opacity,.65); }
 .dune-theme { --paper: #f4eef1; --glass-radius: 32px; --surface: rgba(255,255,255,.24); --surface-tint: rgba(227,212,240,.08); --depth: 0 22px 55px #60447714; --glass-blur: 25px; --flower-opacity: .28; --dune-opacity: .95; --contour-opacity: .3; }
 .dune-theme .ambient-light { background: radial-gradient(ellipse 900px 750px at 100% 3%,#ccb8dc77,transparent 80%),radial-gradient(ellipse 1000px 900px at 0% 38%,#f1dfad55,transparent 85%),radial-gradient(ellipse 800px 1100px at 90% 72%,#d1bede66,transparent 80%); }
 .dune-theme .portrait-device { transform: rotate(2deg); background: linear-gradient(140deg,#fff9,#cdb5e166); box-shadow: inset 0 1px 2px #fff,inset 0 -1px 2px #b29ac455,0 28px 75px #6a4d852b; }
-.dune-theme .portrait-note { left: -28px; bottom: 107px; background: linear-gradient(140deg,#f7ecccaa,#eee0b187); transform: rotate(-7deg); }
+.dune-theme .portrait-note { left: -28px; bottom: 107px; background: linear-gradient(140deg,#f7ecccaa,#eee0b187); transform: rotate(-3deg); }
 .dune-theme .portrait-caption { background: linear-gradient(135deg,#584565a1,#37303b8c); }
 .dune-theme .glass-header { background: linear-gradient(130deg,#ffffff70,#f5ecff38),var(--surface); }
-.dune-theme .degree-badge { background: #dbc8e88c; }
 .dune-theme .belief-quote { background: linear-gradient(105deg,#f3e5bc7d,#faf5e947 65%,#e4d5ef52),var(--surface); }
 
 @media (max-width:1100px) {
@@ -94,7 +93,6 @@ body::before { z-index: -2; opacity: var(--flower-opacity,.65); }
  .portrait-caption p { font-size: 13px; }
  .portrait-note { width: 123px; padding: 15px 17px; bottom: 100px; left: -8px; --glass-radius: 21px; }
  .portrait-note p { font-size: 18px; }
- .note-spark { font-size: 23px; }
  .dune-theme .portrait-note { bottom: 100px; }
 
  .about-opening { grid-template-columns: 1fr; gap: 25px; }
@@ -157,5 +155,41 @@ body::before { z-index: -2; opacity: var(--flower-opacity,.65); }
 }
 @media(prefers-reduced-motion:reduce) { .method-list li:hover { transform: none; } }
 
-/* Restore the original serif note typography. */
-.portrait-note p { font-family: var(--serif); }
+/* Academic foundations and concurrent postdoctoral training. */
+.career-foundation { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; padding: 0 0 25px; margin-bottom: 30px; border-bottom: 1px solid #c9b5d338; }
+.career-foundation > div { display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px 20px; }
+.career-foundation > div + div { border-left: 1px solid #c9b5d338; padding-left: 28px; }
+.foundation-date { font-size: 14px; color: #927b9f; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.career-foundation p { margin: 0; line-height: 1.8; }
+.career-foundation strong { font-size: 16px; font-weight: 600; }
+.career-foundation p > span { font-size: 14px; color: var(--muted); display: block; margin-top: 3px; }
+.career-stage { font-variant-numeric: tabular-nums; letter-spacing: .2px; }
+.career-step { padding-right: 28px; }
+.career-step h4 { font-size: 20px; }
+.career-research { border-left: 2px solid #bcaa8c80; padding-left: 14px; margin-top: 19px; }
+.research-date { display: block; font-size: 13px; line-height: 1.8; color: #947f99; margin-bottom: 5px; }
+.career-research > strong { font-size: 15px; font-weight: 600; }
+.career-step .career-research p { font-size: 14px; line-height: 1.85; margin-top: 5px; }
+@media(max-width:1100px) {
+ .career-step h4 { font-size: 18px; }
+ .career-step { padding-right: 23px; }
+ .career-foundation { gap: 22px; }
+ .career-foundation > div + div { padding-left: 23px; }
+}
+@media(max-width:800px) {
+ .career-step { padding: 0 0 28px 43px; }
+ .career-step h4 { font-size: 20px; }
+ .career-research { margin-top: 15px; }
+}
+@media(max-width:600px) {
+ .career-foundation { grid-template-columns: 1fr; gap: 19px; padding-bottom: 22px; margin-bottom: 26px; }
+ .career-foundation > div { gap: 8px 18px; }
+ .career-foundation > div + div { border: 0; padding: 0; }
+ .career-step { padding-left: 32px; }
+ .career-step h4 { font-size: 19px; }
+ .career-step .career-research p { font-size: 14px; }
+ .research-date { font-size: 13px; }
+}
+@media(max-width:360px) {
+ .career-step h4 { font-size: 18px; }
+}

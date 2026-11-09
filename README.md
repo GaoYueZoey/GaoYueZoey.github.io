@@ -8,8 +8,9 @@
 
 - `index.html`：页面文字、导航和 GitHub 链接。
 - `styles.css`：颜色、字体、排版和手机适配。
+- `assets/profile-layout.css`：资料卡、支持方向、代表项目与首页细节。
 - `favicon.svg`：浏览器标签页图标。
-- `script.js`：自动更新页脚年份。
+- `script.js`：资料卡展开、页面内导航与页脚年份。
 
 可以直接在 GitHub 打开文件，点击编辑并提交。GitHub Pages 会自动更新网站，通常需要几分钟。
 
